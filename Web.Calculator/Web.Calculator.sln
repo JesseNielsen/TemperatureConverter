@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Calculator", "Web.Calculator\Web.Calculator.csproj", "{9314372E-8D0A-40B4-8060-428A71752CBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Temperature", "Web.Temperature\Web.Temperature.csproj", "{DFCE07A2-66FC-4B8C-959D-EE4B258D6D4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9314372E-8D0A-40B4-8060-428A71752CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9314372E-8D0A-40B4-8060-428A71752CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9314372E-8D0A-40B4-8060-428A71752CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9314372E-8D0A-40B4-8060-428A71752CBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFCE07A2-66FC-4B8C-959D-EE4B258D6D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFCE07A2-66FC-4B8C-959D-EE4B258D6D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFCE07A2-66FC-4B8C-959D-EE4B258D6D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFCE07A2-66FC-4B8C-959D-EE4B258D6D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EB69E69-68C4-479E-A396-195EE5F56916}
+	EndGlobalSection
+EndGlobal
