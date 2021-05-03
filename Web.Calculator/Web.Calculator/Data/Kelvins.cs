@@ -2,27 +2,35 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Web.Temperature
+namespace Web.Calculator.Data
 {
     public class Kelvins : Temp
     {
-        public Units Units { get; set; } = Units.Kelvins;
+        public Units Units { get; } = Units.Kelvins;
         public double Degrees { get; set; }
+        public Kelvins()
+        {
 
-        public override double ConvertToTemperature(Units units, double inputDegrees)
+        }
+        public Kelvins(double degrees)
+        {
+            this.Degrees = degrees;
+        }
+
+        public override double ConvertToTemperature(Temp temp)
         {
             double finalDegrees;
 
-            switch (units)
+            switch (temp.Units)
             {
                 case Units.Fahrenheit:
-                    finalDegrees = ((inputDegrees - 273.15) * 1.8) + 32;
+                    finalDegrees = ((temp.Degrees - 273.15) * 1.8) + 32;
                     break;
                 case Units.Celsius:
-                    finalDegrees = inputDegrees - 273.15;
+                    finalDegrees = temp.Degrees - 273.15;
                     break;
                 case Units.Kelvins:
-                    finalDegrees = inputDegrees;
+                    finalDegrees = temp.Degrees;
                     break;
                 default:
                     finalDegrees = 0.0;

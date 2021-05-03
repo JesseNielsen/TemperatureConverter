@@ -1,11 +1,26 @@
 ﻿@page "/"
+@using Web.Calculator.Data;
 
 <h1>Hello, world!</h1>
 
 Select Your Calculator
 
-<form>
-    <InputSelect @bind->
+    <input id="input" type="number" @bind="InputDegrees" @oninput="InputChanged" />
+    <select @bind="InputUnit">
 
-    </InputSelect>
-</form>
+
+        @for (int i = 0; i < Units.Length; i++)
+        {
+            <option value="@Units[i]" @onselect="(e => (InputUnitSelected(Units[i])))">@Units[i]</option>
+        }
+    </select>
+
+    to
+    <input id="output" type="number" @bind="OutputDegrees" disabled />
+    <select @bind="OutputUnit">
+        @for (int j = 0; j < Units.Length; j++)
+        {
+            <option value="@Units[j]" @onselect="(e => (OutputUnitSelected(Units[j])))">@Units[j]</option>
+        }
+
+    </select>
